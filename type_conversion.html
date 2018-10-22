@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>type conversion</title>
+	<script type="text/javascript">
+		var num1 = 3.14;
+		alert(typeof(num1));
+		//number-->string
+		var str1 = num1.toString();
+		alert(typeof(str1)); //string
+		
+		//string-->number
+		var str2 = "12345";
+		var num2 = Number(str2);
+		alert(typeof(num2)); //number
+		alert(num2); // 12345
+
+		var str3 = "abcde";
+		var num3 = Number(str3);
+		alert(typeof(num3)); // number
+		alert(num3); // NaN
+
+		var str4 = "123abc";
+		var num4 = parseInt(str4);
+		alert(num4); // 123
+
+		var str5 = "abc123";
+		var num5 = parseInt(str5);
+		alert(num4); // NaN
+
+		var str6 = "1234.56";
+		var num6 = parseInt(str6);
+		alert(num6); // 1234
+
+		//number,string,undefined,null,0-->boolean
+		var num7 = 3.33;
+		var b1 = Boolean(num7);
+		alert(b1);
+
+		var str7 = "hello";
+		var b2 = Boolean(str7);
+		alert(b2);
+	</script>
+</head>
+<body>
+	<!-- “=”赋值运算符
+	“==”只判断内容是否相同，不判断数据类型。
+	“===”不仅判断内容，还判断数据类型是否相同。
+	！=  只判断内容是否不相同，不判断数据类型。
+	！==不全等于  不仅判断内容是否不相同，还判断数据类型是否不相同。 -->
+</body>
+</html>
